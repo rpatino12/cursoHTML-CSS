@@ -54,3 +54,10 @@ section video
     width: 400px;
     margin-top: 8px;
 }
+section iframe
+{
+    width: 400px;
+    height: 225px;
+    margin-top: 8px;
+    border: 0;
+}
