@@ -49,3 +49,8 @@ figcaption
     font-size: var(--sm);
     color: var(--very-light-pink);
 }
+section video
+{
+    width: 400px;
+    margin-top: 8px;
+}
