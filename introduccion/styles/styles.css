@@ -34,6 +34,7 @@ li p:first-child
 li figure
 {
     margin: 0;
+    width: 200px;
 }
 li figure img
 {
