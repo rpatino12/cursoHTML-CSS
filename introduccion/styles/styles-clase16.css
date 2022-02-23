@@ -14,21 +14,34 @@ body, input
 {
     font-family: 'Quicksand', sans-serif;
 }
-.formulario
+.formulario, .calendario
 {
     display: flex;
     flex-direction: column;
     width: 200px;
+    margin-top: 28px;
 }
-.formulario label
+.formulario label, .calendario label
 {
     margin-top: 8px;
 }
-.formulario input
+.formulario input, .calendario input
 {
     margin-top: 8px;
 }
 .formulario input:hover
 {
     background-color: var(--text-input-field);
+}
+.calendar-container
+{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+}
+.calendar-container input[type="image"]
+{
+    width: 60px;
 }

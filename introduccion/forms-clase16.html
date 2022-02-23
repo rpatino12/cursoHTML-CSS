@@ -15,9 +15,10 @@
     <title>Formularios</title>
 </head>
 <body>
-    <form action="/" class="formulario">
+    <h1>Formularios</h1>
+    <form action="" class="formulario">
         <label for="name">Cúal es tu nombre?</label>
-        <input type="text" name="" id="name" placeholder="Jane Doe">
+        <input type="text" name="name" id="name" placeholder="Jane Doe">
 
         <label for="start-date">Qué día iniciaste en Platzi?</label>
         <input type="date" id="start-date">
@@ -26,6 +27,36 @@
         <input type="time" id="horario">
         <!--Recordar que el "id" del input tiene que ser igual al "for" del label-->
         <input type="submit" value="Confirmar">
+    </form>
+
+    <!--Forma larga de crear un calendario, para planear un viaje por ejemplo-->
+    <form action="" class="calendario">
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora">
+        <!--El atributo "name" tambien debe ser igual al "id" y al "for" -->
+        <label for="dia">Día</label>
+        <input type="date" name="dia" id="dia">
+
+        <label for="semana">Semana</label>
+        <input type="week" name="semana" id="semana">
+        
+        <label for="mes">Mes</label>
+        <input type="month" name="mes" id="mes">
+
+        <input type="submit">
+    </form>
+
+    <!--Forma sencilla de crear un calendario-->
+    <form action="" class="calendario">
+        <fieldset class="calendar-container">
+            <legend>Calendario sencillo</legend>
+            
+            <label for="calendario">Ingrese la fecha y la hora</label>
+            <input type="datetime-local" name="calendario" id="calendario">
+            
+            <input type="image" src="https://images.pexels.com/photos/3683087/pexels-photo-3683087.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="flecha">
+            <!--Esta etiqueta input con el atributo image sirve como un boton al igual que submit pero con una imagen, es una forma grafica del submit button-->
+        </fieldset>
     </form>
 </body>
 </html>
