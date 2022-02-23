@@ -1,0 +1,34 @@
+:root /*Guardar los colores base de nuestro proyecto, por si alguna vez cambian desde diseño, simplemente cambiarlos desde aqui*/
+{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    /*Aqui se guardan unas variables con las diferentes medidas para el font-size*/
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+body, input
+{
+    font-family: 'Quicksand', sans-serif;
+}
+.formulario
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.formulario label
+{
+    margin-top: 8px;
+}
+.formulario input
+{
+    margin-top: 8px;
+}
+.formulario input:hover
+{
+    background-color: var(--text-input-field);
+}
