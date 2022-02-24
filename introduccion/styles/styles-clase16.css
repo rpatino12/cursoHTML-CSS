@@ -10,7 +10,7 @@
     --md:16px;
     --lg:18px;
 }
-body, input
+body, input, option, select
 {
     font-family: 'Quicksand', sans-serif;
 }
@@ -48,4 +48,10 @@ h1, h2
 .calendar-container input[type="image"]
 {
     width: 60px;
+}
+label[for="cursos"]
+{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--sm);
 }

@@ -78,5 +78,24 @@
 
         <input type="submit" value="Enviar">
     </form>
+
+    <!--Aqui se introduce la etiqueta select de la clase 19, utilizado cuando hay pocas opciones-->
+    <label for="cursos">Selecciona un curso</label>
+    <select name="Cursos" id="cursos">
+        <option value="">Por favor selecciona una opcion</option>
+        <option value="Javascript">Javascript</option>
+        <option value="HTML5">HTML5</option>
+        <option value="CSS3">CSS3</option>
+        <option value="Web standards">Web standards</option>
+    </select>
+
+    <!--Y esta es la mejor opcion de usar select cunado hay muchas opciones-->
+    <input list="cursos">
+    <datalist id="cursos"> <!--El "id" debe ser igual al "list" del input-->
+        <option value="Javascript"></option>
+        <option value="HTML5"></option>
+        <option value="CSS3"></option>
+        <option value="Web standards"></option>
+    </datalist>
 </body>
 </html>
