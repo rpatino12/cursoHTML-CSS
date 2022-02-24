@@ -14,12 +14,16 @@ body, input
 {
     font-family: 'Quicksand', sans-serif;
 }
+h1, h2
+{
+    margin: 0;
+}
 .formulario, .calendario
 {
     display: flex;
     flex-direction: column;
     width: 200px;
-    margin-top: 28px;
+    margin-bottom: 28px;
 }
 .formulario label, .calendario label
 {
