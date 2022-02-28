@@ -20,6 +20,10 @@ html
 {
     font-size: 62.5%;
 }
+body
+{
+    font-family: 'Quicksand', sans-serif;
+}
 main
 {
     width: 100vw;
