@@ -39,7 +39,7 @@ div
     position: relative;
     margin: 0 auto;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
 }
 .title
@@ -55,6 +55,8 @@ div
 .title h3
 {
     text-align: center;
+    color: rgb(129, 33, 33);
+    font-size: var(--lg);
 }
 .main
 {
@@ -67,4 +69,22 @@ div
     border: 1px solid gray;
     padding-top: 60px;
     text-align: justify;
+    display: block;
+    box-shadow: 4px 4px 8px gray;
+}
+.main figure
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-right: 12px;
+    shape-outside: circle();
+    box-shadow: 4px 4px 8px gray;
+}
+.main figure img
+{
+    width: 100px;
+    height: 100px;
 }
