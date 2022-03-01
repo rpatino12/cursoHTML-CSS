@@ -1,0 +1,128 @@
+:root /*Guardar los colores base de nuestro proyecto, por si alguna vez cambian desde diseño, simplemente cambiarlos desde aqui*/
+{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    /*Aqui se guardan unas variables con las diferentes medidas para el font-size*/
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    display: flex;
+}
+.layout.container
+{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.header
+{
+    background-color: lightgrey;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
+.header .logo
+{
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+.header .logo img
+{
+    width: 100%;
+    cursor: pointer;
+}
+.nav
+{
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: 28px;
+    justify-content: flex-end;
+}
+.nav .nav-item a
+{
+    margin-left: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: var(--md);
+    font-weight: bold;
+}
+.mid 
+{
+    height: 100%;
+}
+.aside
+{
+    /* background-color: black; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside .aside-item
+{
+    background-color: gray;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    margin: 10px 10px 0;
+    align-content: baseline;
+}
+.aside .aside-item:last-child
+{
+    margin-bottom: 10px;
+}
+.aside .aside-item img
+{
+    width: 100%;
+    position: relative;
+    top: -8px;
+}
+.main
+{
+    font-size: var(--md);
+    font-weight: 400;
+    /* background-color: darkgrey; */
+}
+.footer
+{
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+}
+.footer ul
+{
+    margin: 0;
+}
+.footer-left .nav .nav-item a
+{
+    font-weight: 100;
+    font-size: var(--sm);
+    color: white;
+    margin-left: 0;
+    margin-right: 12px;
+}
