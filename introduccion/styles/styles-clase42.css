@@ -1,0 +1,50 @@
+:root /*Guardar los colores base de nuestro proyecto, por si alguna vez cambian desde diseño, simplemente cambiarlos desde aqui*/
+{
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #003476;
+    --secondary-color: #b4d2f7;
+    /*Aqui se guardan unas variables con las diferentes medidas para el font-size*/
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:1.8rem;
+    --header-size:4rem;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--md);
+}
+header
+{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+main
+{
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--lg);
+}
+h1
+{
+    font-size: var(--header-size);
+    color: var(--primary-color);
+}
+footer
+{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secondary-color);
+}
