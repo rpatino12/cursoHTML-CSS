@@ -75,7 +75,6 @@ body
 }
 .aside
 {
-    /* background-color: black; */
     flex-direction: column;
     justify-content: space-between;
 }
@@ -88,6 +87,7 @@ body
     height: 100px;
     margin: 10px 10px 0;
     align-content: baseline;
+    box-shadow: 4px 4px 8px gray;
 }
 .aside .aside-item:last-child
 {
@@ -103,7 +103,8 @@ body
 {
     font-size: var(--md);
     font-weight: 400;
-    /* background-color: darkgrey; */
+    text-align: justify;
+    padding: 10px;
 }
 .footer
 {
