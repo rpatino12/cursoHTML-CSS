@@ -42,6 +42,7 @@ body
     height: 80px;
     font-size: 1.6rem;
     padding: 0 20px;
+    flex-shrink: 0; /*Este flex shrink evita que el contenedor .header se encoja cuando hay mas contenido en el layout container*/
 }
 .header .logo
 {
@@ -71,12 +72,13 @@ body
 }
 .mid 
 {
-    height: 100%;
+    flex-grow: 1; /*Este flex-grow sirve para que mid (cuando lo vemos desde la perspectiva de elemento hijo del "layout container") ocupe el espacio restante que se requiere para llenar el 100vh que se determinó para el "layout container", permitiendo que mid crezca*/
 }
 .aside
 {
     flex-direction: column;
     justify-content: space-between;
+    background-color: gray;
 }
 .aside .aside-item
 {
