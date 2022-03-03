@@ -60,7 +60,7 @@ body
 }
 
 /*Una vez la pantalla sea igual o mayor a 600px aplicara el siguiente codigo, el primer breakpoint seria de 600px*/
-@media (min-width: 600px) 
+/* @media (min-width: 600px) 
 {
     .c2, .c3, .c4
     {
@@ -70,10 +70,10 @@ body
     {
         margin: 0 auto;
     }
-}
+} */
 
 /*Ahora, cuando la pantalla sea igual o mayor a 800px aplicara el siguiente codigo*/
-@media (min-width: 800px) 
+/* @media (min-width: 800px) 
 {
     .container
     {
@@ -96,4 +96,4 @@ body
     {
         width: 34%;
     }
-}
+} */
