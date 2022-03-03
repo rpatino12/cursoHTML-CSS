@@ -32,7 +32,7 @@ body
     flex-wrap: wrap;
     /*Esto permite que el contenido se pueda reposicionar a medida de que vaya creciendo el viewport*/
 }
-.container div
+.c1, .c2, .c3, .c4, .c5
 {
     width: 100%;
     min-width: 150px;
@@ -57,4 +57,43 @@ body
 .c5
 {
     background-color: plum;
+}
+
+/*Una vez la pantalla sea igual o mayor a 600px aplicara el siguiente codigo, el primer breakpoint seria de 600px*/
+@media (min-width: 600px) 
+{
+    .c2, .c3, .c4
+    {
+        width: 50%;
+    }
+    .c4
+    {
+        margin: 0 auto;
+    }
+}
+
+/*Ahora, cuando la pantalla sea igual o mayor a 800px aplicara el siguiente codigo*/
+@media (min-width: 800px) 
+{
+    .container
+    {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .c1
+    {
+        width: 60%;
+    }
+    .c2
+    {
+        width: 40%;
+    }
+    .c3, .c4
+    {
+        width: 33%;
+    }
+    .c5
+    {
+        width: 34%;
+    }
 }
