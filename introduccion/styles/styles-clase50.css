@@ -1,0 +1,31 @@
+:root /*Guardar los colores base de nuestro proyecto, por si alguna vez cambian desde diseño, simplemente cambiarlos desde aqui*/
+{
+    --white: #FFFFFF;
+    --black: #000000;
+    --primary-color: #003476;
+    --secondary-color: #b4d2f7;
+    /*Aqui se guardan unas variables con las diferentes medidas para el font-size*/
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:1.8rem;
+    --header-size:4rem;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--md);
+}
+img
+{
+    width: 100%;
+}

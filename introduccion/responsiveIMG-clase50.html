@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/styles-clase50.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Imagenes responsive</title>
+</head>
+<body>
+    <main>
+        <!-- Aqui picture pasa a ser el contenedor de la imagen y permite que el navegador elija el tamaño de imagen segun el dispositivo, que inicialmente seria la imagen mas pequeña por estar trabajando con mobile first -->
+        <picture>
+            <!-- Con la etiqueta source dentro de picture, le damos opciones al navegador para descargar las imagenes con los breakpoints establecidos con el atributo media y siempre debe ir de mayor a menor -->
+            <source media="(min-width: 1300px)" srcset="../assets/large.jpg">
+            <source media="(min-width: 800px)" srcset="../assets/medium.jpg">
+            <img src="../assets/small.jpg" alt="cohete">
+        </picture>
+    </main>
+</body>
+</html>
