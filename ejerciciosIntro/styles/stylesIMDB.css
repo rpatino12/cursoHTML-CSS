@@ -111,6 +111,7 @@ a
     width: 100%;
     height: inherit;
     left: 8;
+    top: 0;
     z-index: -1;
 }
 .c2 .background img
@@ -231,7 +232,6 @@ a
 
 .c5
 {
-    min-height: 70vw;
     background-color: var(--bg-secondary-color);
     flex-direction: column;
     justify-content: space-between;
@@ -428,5 +428,25 @@ a
     .c1 .search-bar .input-search-bar input::placeholder
     {
         color: var(--font-tertiary-color);
+    }
+}
+
+@media (min-width: 800px)
+{
+    .container
+    {
+        width: 800px;
+        margin: 0 auto;
+    }
+    .c5, .c6
+    {
+        width: 50%;
+    }
+    .c4
+    {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
