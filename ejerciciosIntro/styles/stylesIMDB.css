@@ -9,7 +9,7 @@
     --primary-color: #f5c518;
     --secondary-color: #5799ef;
     /*Aqui se guardan unas variables con las diferentes medidas para el font-size*/
-    --sm:1.4rem;
+    --sm:1.2rem;
     --md:1.6rem;
     --lg:2rem;
     --header-size:2.4rem;
@@ -45,7 +45,7 @@ a
 {
     width: 100%;
     display: flex;
-    max-height: 600px;
+    max-height: 900px;
 }
 .c1
 {
@@ -363,6 +363,61 @@ a
     margin: 16px 0;
     align-self: center;
     justify-self: flex-end;
+}
+
+.c7
+{
+    flex-direction: column;
+    padding: 16px;
+}
+.c7 ul
+{
+    list-style: none;
+}
+.c7 .social-networks
+{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.c7 .social-networks ul
+{
+    width: fit-content;
+    margin: 0 auto;
+}
+.c7 .social-networks ul li
+{
+    display: inline-block;
+    margin: 12px 20px;
+}
+.c7 .links
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.c7 .links ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.c7 .links ul li a
+{
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    padding: 8px;
+}
+.c7 .links ul li .img-container
+{
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+.c7 .legal
+{
+    font-size: var(--sm);
+    color: var(--font-secondary-color);
+    margin: 0 auto;
 }
 
 @media (min-width: 600px)
